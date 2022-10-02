@@ -21,6 +21,7 @@ public class EnemyFactory : GameObjectFactory
     {
         Debug.Assert(enemy.OriginFactory == this, "Wrong factory attempting to reclaim");
         Destroy(enemy.gameObject);
+        Debug.log("Hello");
     }
 
 }
